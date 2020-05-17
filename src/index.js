@@ -1,3 +1,4 @@
 "use strict";
 import common from './common/index' 
-export { common }
+import template from './template/index'
+export { common ,template}

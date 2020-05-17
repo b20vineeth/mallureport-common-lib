@@ -8,10 +8,13 @@ export const renderField = ({
     <div className="form-group">
          <label htmlFor={label}>{label}</label>
              <input {...input} placeholder={label} type={type} className="form-control" />
-          {touched &&
-             ((error && <span>{error}</span>) ||
-             (warning && <span>{warning}</span>))}
+           {touched &&
+             ((error && <span className="errorMsg"> {
+               error
+               }</span>) ||
+             (warning && <span className="warningMsg">{warning}</span>))}
       
           </div>
   )
+  
   
